@@ -11,10 +11,10 @@ public class apac1 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(fileIn));
         PrintWriter out = new PrintWriter(new FileWriter(fileOut));
-
+        TreeSet<Character> sizeset;
         int t = Integer.parseInt(br.readLine());
         for (int z = 1; z <= t; z++) {
-            TreeSet<Character> sizeset = new TreeSet<>();
+            sizeset = new TreeSet<>();
             int n = Integer.parseInt(br.readLine());
             String str = br.readLine().trim();
             String ans = str;
